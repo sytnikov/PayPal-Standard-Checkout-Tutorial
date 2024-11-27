@@ -1,3 +1,4 @@
 node_modules
 .DS_Store
 .env
+restore_index_code.js
