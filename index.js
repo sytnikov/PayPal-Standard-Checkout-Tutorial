@@ -29,7 +29,7 @@ const endpoint_url =
  * @returns {object} The created order as a JSON response.
  * @throws {Error} If there is an error creating the order.
  */
-app.post('/create_order', (req, res) => {
+app.post('/api/create_order', (req, res) => {
   get_access_token()
     .then((access_token) => {
       let order_data_json = {
@@ -78,7 +78,7 @@ app.post('/create_order', (req, res) => {
  * @returns {object} The completed order as a JSON response.
  * @throws {Error} If there is an error completing the order.
  */
-app.post('/complete_order', (req, res) => {
+app.post('/api/complete_order', (req, res) => {
   get_access_token()
     .then((access_token) => {
       fetch(

@@ -24,10 +24,11 @@ document.addEventListener('click', handle_click)
 const paypal_sdk_url = 'https://www.paypal.com/sdk/js'
 const client_id =
   'AcppowvXbmxhO2BVjIRnF7W7rlivEYmsyPY90oE6cqTsGH_IPLI6YbDWBOXkhYUlzicNbjxV4E8AnhIN'
-const currency = 'EUR'
+const currency = 'USD'
 const intent = 'capture'
 let alerts = document.getElementById('alerts')
-const backend_url = 'https://pay-pal-standard-checkout-tutorial.vercel.app/'
+// const backend_url = 'https://pay-pal-standard-checkout-tutorial.vercel.app'
+const backend_url = 'http://localhost:3000'
 
 //PayPal Code
 //https://developer.paypal.com/sdk/js/configuration/#link-queryparameters
