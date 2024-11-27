@@ -27,6 +27,7 @@ const client_id =
 const currency = 'EUR'
 const intent = 'capture'
 let alerts = document.getElementById('alerts')
+const backend_url = 'https://pay-pal-standard-checkout-tutorial.vercel.app/'
 
 //PayPal Code
 //https://developer.paypal.com/sdk/js/configuration/#link-queryparameters
@@ -60,7 +61,7 @@ url_to_head(
 
       createOrder: function (data, actions) {
         //https://developer.paypal.com/docs/api/orders/v2/#orders_create
-        return fetch('http://localhost:3000/create_order', {
+        return fetch(`${backend_url}/create_order`, {
           method: 'post',
           headers: { 'Content-Type': 'application/json; charset=utf-8' },
           body: JSON.stringify({ intent: intent }),
@@ -73,7 +74,7 @@ url_to_head(
 
       onApprove: function (data, actions) {
         let order_id = data.orderID
-        return fetch('http://localhost:3000/complete_order', {
+        return fetch(`${backend_url}/complete_order`, {
           method: 'post',
           headers: { 'Content-Type': 'application/json; charset=utf-8' },
           body: JSON.stringify({
