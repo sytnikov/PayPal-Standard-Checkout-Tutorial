@@ -27,8 +27,8 @@ const client_id =
 const currency = 'USD'
 const intent = 'capture'
 let alerts = document.getElementById('alerts')
-// const backend_url = 'https://pay-pal-standard-checkout-tutorial.vercel.app'
-const backend_url = 'http://localhost:3000'
+const backend_url = 'https://pay-pal-standard-checkout-tutorial.vercel.app'
+// const backend_url = 'http://localhost:3000'
 
 //PayPal Code
 //https://developer.paypal.com/sdk/js/configuration/#link-queryparameters
