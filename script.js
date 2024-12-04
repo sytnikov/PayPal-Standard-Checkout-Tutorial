@@ -27,7 +27,7 @@ const client_id =
 const currency = 'USD'
 const intent = 'capture'
 let alerts = document.getElementById('alerts')
-const backend_url = 'https://pay-pal-standard-checkout-tutorial.vercel.app/api'
+const backend_url = 'https://plasma-crossbar-443711-u0.ew.r.appspot.com'
 // const backend_url = 'http://localhost:3000'
 
 //PayPal Code
